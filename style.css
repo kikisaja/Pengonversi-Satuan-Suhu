@@ -1,0 +1,150 @@
+:root {
+    --bg-light: #f1f5f9;
+    --panel-bg: #ffffff;
+    --text-dark: #1e293b;
+    --stroke-dark: #1e293b;
+    --pop-purple: #a2d2ff;
+    --pop-pink: #ffafcc;
+    --pop-blue: #bde0fe;
+    --pop-yellow: #ffc8dd;
+    --btn-color: #06d6a0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.conv-container {
+    background-color: var(--panel-bg);
+    padding: 35px 25px;
+    border-radius: 24px;
+    border: 3px solid var(--stroke-dark);
+    box-shadow: 6px 6px 0px var(--stroke-dark);
+    max-width: 460px;
+    width: 100%;
+}
+
+.conv-header h1 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.conv-header p {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 25px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* Kelompok Input & Selektor Dropdown */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: #475569;
+    text-transform: uppercase;
+}
+
+.input-group input, 
+.input-group select {
+    padding: 12px 15px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border: 2px solid var(--stroke-dark);
+    border-radius: 12px;
+    background-color: #fafafa;
+    outline: none;
+    transition: all 0.15s ease;
+    color: var(--text-dark);
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    background-color: #ffffff;
+    box-shadow: 3px 3px 0px var(--stroke-dark);
+}
+
+/* Tombol Cetak Pop Art */
+.btn-pop {
+    width: 100%;
+    background-color: var(--btn-color);
+    color: var(--text-dark);
+    border: 3px solid var(--stroke-dark);
+    padding: 14px;
+    font-size: 1.05rem;
+    font-weight: 800;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0px var(--stroke-dark);
+    transition: all 0.1s ease;
+    margin-bottom: 25px;
+    outline: none;
+}
+
+.btn-pop:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px var(--stroke-dark);
+}
+
+.btn-pop:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px var(--stroke-dark);
+}
+
+/* Layout Grid Kartu Hasil Output */
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.result-card {
+    border: 2px solid var(--stroke-dark);
+    border-radius: 14px;
+    padding: 15px 10px;
+    text-align: center;
+    box-shadow: 3px 3px 0px var(--stroke-dark);
+}
+
+.card-purple { background-color: var(--pop-purple); }
+.card-pink { background-color: var(--pop-pink); }
+.card-blue { background-color: var(--pop-blue); }
+.card-yellow { background-color: var(--pop-yellow); }
+
+.result-card span {
+    display: block;
+    font-size: 1.35rem;
+    font-weight: 900;
+    margin-bottom: 2px;
+    word-break: break-all;
+}
+
+.result-card small {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
