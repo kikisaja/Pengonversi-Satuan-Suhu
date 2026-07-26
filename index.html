@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konverter Suhu Pop Art 🌡️✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="conv-container">
+        <header class="conv-header">
+            <h1>🌡️ KONVERTER SUHU</h1>
+            <p>Masukkan nilai derajat suhu, pilih skala asal, dan lihat hasil konversinya secara instan!</p>
+        </header>
+
+        <main class="conv-body">
+            <div class="input-group">
+                <label for="input-angka">Nilai Suhu</label>
+                <input type="number" id="input-angka" placeholder="Contoh: 100" value="0" autocomplete="off">
+            </div>
+
+            <div class="input-group">
+                <label for="select-skala">Skala Asal</label>
+                <select id="select-skala">
+                    <option value="C">Celsius (°C)</option>
+                    <option value="F">Fahrenheit (°F)</option>
+                    <option value="K">Kelvin (K)</option>
+                    <option value="R">Reaumur (°R)</option>
+                </select>
+            </div>
+
+            <button id="btn-konversi" class="btn-pop">Konversi Sekarang 🚀</button>
+        </main>
+
+        <footer class="result-grid">
+            <div class="result-card card-purple">
+                <span id="output-celsius">0 °C</span>
+                <small>Celsius</small>
+            </div>
+            <div class="result-card card-pink">
+                <span id="output-fahrenheit">32 °F</span>
+                <small>Fahrenheit</small>
+            </div>
+            <div class="result-card card-blue">
+                <span id="output-kelvin">273.15 K</span>
+                <small>Kelvin</small>
+            </div>
+            <div class="result-card card-yellow">
+                <span id="output-reaumur">0 °R</span>
+                <small>Reaumur</small>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
